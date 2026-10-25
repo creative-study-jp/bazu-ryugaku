@@ -1,0 +1,47 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=Montserrat:wght@500;600&family=Zen+Kaku+Gothic+New:wght@500;700&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:3240px;height:1440px;overflow:hidden}
+body{position:relative;color:#fff;-webkit-font-smoothing:antialiased;background:#0b1220}
+.abs{position:absolute}
+.bgimg{left:0;top:0;width:3240px;height:1440px;object-fit:cover;object-position:50% 56%;filter:saturate(.85) contrast(1.05)}
+.bgshade{left:0;top:0;width:3240px;height:1440px;background:
+  linear-gradient(180deg,rgba(8,12,24,.55) 0%,rgba(8,12,24,.15) 40%,rgba(8,12,24,.35) 70%,rgba(8,12,24,.85) 100%),
+  linear-gradient(90deg,rgba(8,12,24,.65) 0%,rgba(8,12,24,0) 25%,rgba(8,12,24,0) 75%,rgba(8,12,24,.65) 100%)}
+.bali{left:0;width:3240px;top:-10px;text-align:center;font-family:"Didot";font-weight:400;font-size:900px;line-height:1;letter-spacing:.06em;padding-left:.06em;
+  background:linear-gradient(180deg,#ffffff 0%,#f1ede6 55%,rgba(241,237,230,.6) 100%);-webkit-background-clip:text;color:transparent}
+.people{left:700px;top:230px;width:2100px;height:1500px;
+  mask-image:linear-gradient(90deg,transparent 0,#000 70px,#000 calc(100% - 70px),transparent 100%),
+    linear-gradient(180deg,#000 0,#000 380px,transparent 600px),
+    linear-gradient(90deg,transparent 0,#000 300px,#000 calc(100% - 260px),transparent 100%);
+  mask-composite:intersect,add,add;
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,.55)) saturate(.92)}
+.floor{left:0;top:1180px;width:3240px;height:260px;background:linear-gradient(180deg,rgba(7,11,20,0),rgba(7,11,20,.85))}
+.en{font-family:"Montserrat";font-weight:600;text-transform:uppercase;letter-spacing:.34em}
+.mincho{font-family:"Shippori Mincho B1";font-weight:800}
+.gothic{font-family:"Zen Kaku Gothic New";font-weight:700}
+.colL{left:180px;width:900px;white-space:nowrap}
+.colR{right:180px;width:1000px;text-align:right;white-space:nowrap}
+.sh{text-shadow:0 4px 18px rgba(0,0,0,.55),0 10px 60px rgba(0,0,0,.45)}
+</style></head><body>
+<img class="abs bgimg" src="bali_bg.png"><div class="abs bgshade"></div>
+<div class="abs bali">BALI</div>
+<img class="abs people" src="people_cutout_clean.png">
+<div class="abs bali" style="background:none;-webkit-text-fill-color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.5)">BALI</div>
+<div class="abs bali" style="opacity:.2;mix-blend-mode:screen">BALI</div>
+<div class="abs floor"></div>
+
+<img class="abs" src="logo_ryugaku_white.png" style="left:124px;top:700px;width:620px;filter:drop-shadow(0 8px 30px rgba(0,0,0,.6))">
+<div class="abs colL en" style="top:1150px;font-size:18px;color:rgba(255,255,255,.75)">Since Vol.01 — Cebu</div>
+<div class="abs colL mincho sh" style="top:1190px;font-size:76px;letter-spacing:.04em">人生をバズらせろ。</div>
+
+<div class="abs colR en sh" style="top:762px;font-size:20px;color:rgba(255,255,255,.8)">The Second Edition</div>
+<div class="abs colR mincho sh" style="top:796px;font-size:170px;line-height:1.14">第二回<br>開催決定</div>
+<div class="abs colR" style="top:1212px;left:auto;width:560px;height:1px;background:rgba(255,255,255,.45)"></div>
+<div class="abs colR gothic sh" style="top:1236px;font-size:40px;letter-spacing:.16em">次の舞台は、バリ島。</div>
+<div class="abs colR gothic sh" style="top:1302px;font-size:26px;letter-spacing:.12em;color:rgba(255,255,255,.8)">詳しくはプロフィールのリンクから →</div>
+
+<div class="abs en" style="left:180px;top:70px;font-size:18px;color:rgba(255,255,255,.6)">Bazu Ryugaku — Vol.02</div>
+<div class="abs en" style="right:180px;top:70px;font-size:18px;color:rgba(255,255,255,.6)">Bali, Indonesia</div>
+</body></html>

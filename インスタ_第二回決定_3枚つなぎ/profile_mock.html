@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:430px;height:932px;overflow:hidden;background:#fff;color:#000;font-family:-apple-system,"Hiragino Sans",sans-serif;-webkit-font-smoothing:antialiased;position:relative}
+.status{height:54px;display:flex;justify-content:space-between;align-items:center;padding:0 32px;font-weight:600;font-size:16px}
+.top{height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.uname{font-weight:700;font-size:21px}
+.icons{display:flex;gap:22px}.icons span{width:24px;height:24px;border:2px solid #000;border-radius:7px;display:block}
+.head{display:flex;align-items:center;padding:10px 16px 0}
+.av{width:88px;height:88px;border-radius:50%;padding:3px;background:conic-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5,#feda75)}
+.av div{width:100%;height:100%;border-radius:50%;background:#111 url(logo_ryugaku_white.png) center/90% no-repeat;border:3px solid #fff}
+.stats{flex:1;display:flex;justify-content:space-around;text-align:center;margin-left:12px}
+.stats b{display:block;font-size:17px}.stats small{font-size:13px}
+.bio{padding:10px 16px 0;font-size:14px;line-height:1.4}.bio b{font-weight:600}.bio a{color:#00376b;font-weight:600}
+.btns{display:flex;gap:6px;padding:12px 16px 0}
+.btns div{flex:1;height:34px;border-radius:9px;background:#efefef;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.btns .f{background:#0095f6;color:#fff}
+.hl{display:flex;gap:16px;padding:14px 16px 0}.hl div{text-align:center;font-size:12px}
+.hl i{display:block;width:64px;height:64px;border-radius:50%;border:1px solid #dbdbdb;background:#f3f3f3 center/cover;margin-bottom:5px}
+.tabs{display:flex;margin-top:14px;border-bottom:1px solid #dbdbdb}
+.tabs div{flex:1;height:44px;display:flex;align-items:center;justify-content:center}
+.tabs .on{border-bottom:1.5px solid #000}.tabs span{width:22px;height:22px;border:2px solid #000;border-radius:3px}
+.tabs div:not(.on) span{border-color:#999}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.grid div{aspect-ratio:3/4;background:center/cover no-repeat}
+.nav{position:absolute;bottom:0;left:0;right:0;height:84px;background:#fff;border-top:1px solid #efefef;display:flex;justify-content:space-around;padding-top:14px}
+.nav span{width:26px;height:26px;border:2px solid #000;border-radius:7px}
+</style></head><body>
+<div class="status"><span>9:41</span><span>●●● 100%</span></div>
+<div class="top"><div class="uname">bazu_ryugaku ⌄</div><div class="icons"><span></span><span></span></div></div>
+<div class="head"><div class="av"><div></div></div>
+ <div class="stats"><div><b>128</b><small>投稿</small></div><div><b>1.2万</b><small>フォロワー</small></div><div><b>210</b><small>フォロー中</small></div></div></div>
+<div class="bio"><b>バズ留学</b><br>人生をバズらせろ。<br>第2回 バリ島 開催決定 🇮🇩<br><a>🔗 詳しくはこちら</a></div>
+<div class="btns"><div class="f">フォロー</div><div>メッセージ</div><div style="flex:0 0 34px">＋</div></div>
+<div class="hl"><div><i style="background-image:url(mock_thumbs/t1.jpg)"></i>BALI</div><div><i style="background-image:url(mock_thumbs/g.jpg)"></i>CEBU</div><div><i style="background-image:url(mock_thumbs/t3.jpg)"></i>募集</div><div><i style="background-image:url(mock_thumbs/t4.jpg)"></i>Q&amp;A</div><div><i style="background-image:url(mock_thumbs/t5.jpg)"></i>Voice</div></div>
+<div class="tabs"><div class="on"><span></span></div><div><span></span></div><div><span></span></div></div>
+<div class="grid">
+ <div id="a"></div><div id="b"></div><div id="c"></div>
+ <div style="background-image:url(mock_thumbs/t1.jpg)"></div><div style="background-image:url(mock_thumbs/t2.jpg)"></div><div style="background-image:url(mock_thumbs/t3.jpg)"></div>
+ <div style="background-image:url(mock_thumbs/t4.jpg)"></div><div style="background-image:url(mock_thumbs/t5.jpg)"></div><div style="background-image:url(mock_thumbs/t6.jpg)"></div>
+</div>
+<div class="nav"><span></span><span></span><span></span><span></span><span></span></div>
+<script>
+const v=new URLSearchParams(location.search).get('v')||'v8';
+['左','中','右'].forEach((n,i)=>document.getElementById('abc'[i]).style.backgroundImage=`url(${v}_0${i+1}_${n}_1080x1440.png)`);
+</script>
+</body></html>
