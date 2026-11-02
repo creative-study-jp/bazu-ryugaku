@@ -695,6 +695,44 @@
   </div>
 </section>
 
+<!-- ============ FEATURE：山本康二さんのYouTubeに掲載 ============ -->
+<section id="feature" class="relative bg-white pb-24 md:pb-32">
+  <div class="mx-auto max-w-[1400px] px-4 md:px-8">
+    <div class="grid gap-8 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-7">
+        <p class="tag rv text-sky">Feature — YouTube</p>
+        <h2 class="jp-head rv rv-d1 mt-5 text-[30px] md:text-[48px]">山本康二さんの<br class="md:hidden">YouTubeに、<br>掲載されました。</h2>
+      </div>
+      <p class="rv rv-d2 text-[15px] leading-[2] text-sub md:col-span-5">グローバルパートナーズ株式会社 代表取締役社長の山本康二さんを、運営の玉置涼太が訪ねた回です。バズ留学の話を、ここでは一部だけ抜粋しました。</p>
+    </div>
+    <div class="mt-10 grid gap-4 md:grid-cols-3 md:gap-5">
+      <figure class="rv overflow-hidden rounded-2xl border hairline bg-white">
+        <div class="group relative aspect-video w-full bg-navy">
+          <video webkit-playsinline class="block h-full w-full object-cover" src="video/talk-concept.mp4" poster="img/talk-concept-poster.jpg" playsinline preload="none" aria-label="玉置涼太が企画の中身を山本康二さんに話す場面"></video>
+          <button type="button" class="talk-play absolute inset-0 flex items-center justify-center" aria-label="音ありで再生"><span class="flex h-16 w-16 items-center justify-center rounded-full bg-white text-navy shadow-xl transition group-hover:scale-110"><svg class="ml-1 h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></button>
+        </div>
+        <figcaption class="p-5"><p class="jp-head text-lg">「ただの語学留学じゃなくて」</p><p class="mt-2 text-[13px] leading-[1.8] text-sub">玉置涼太の説明に、山本さんの返事は「おもろっ」。</p></figcaption>
+      </figure>
+      <figure class="rv rv-d1 overflow-hidden rounded-2xl border hairline bg-white">
+        <div class="group relative aspect-video w-full bg-navy">
+          <video webkit-playsinline class="block h-full w-full object-cover" src="video/talk-derukui.mp4" poster="img/talk-derukui-poster.jpg" playsinline preload="none" aria-label="玉置涼太が出る杭を打たれない社会について話す場面"></video>
+          <button type="button" class="talk-play absolute inset-0 flex items-center justify-center" aria-label="音ありで再生"><span class="flex h-16 w-16 items-center justify-center rounded-full bg-white text-navy shadow-xl transition group-hover:scale-110"><svg class="ml-1 h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></button>
+        </div>
+        <figcaption class="p-5"><p class="jp-head text-lg">「出る杭を打たれない社会を作りたい」</p><p class="mt-2 text-[13px] leading-[1.8] text-sub">玉置涼太が、同世代と目指していること。</p></figcaption>
+      </figure>
+      <figure class="rv rv-d2 overflow-hidden rounded-2xl border hairline bg-white">
+        <div class="group relative aspect-video w-full bg-navy">
+          <video webkit-playsinline class="block h-full w-full object-cover" src="video/talk-yamamoto.mp4" poster="img/talk-yamamoto-poster.jpg" playsinline preload="none" aria-label="山本康二さんが玉置涼太たちに語りかける場面"></video>
+          <button type="button" class="talk-play absolute inset-0 flex items-center justify-center" aria-label="音ありで再生"><span class="flex h-16 w-16 items-center justify-center rounded-full bg-white text-navy shadow-xl transition group-hover:scale-110"><svg class="ml-1 h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></button>
+        </div>
+        <figcaption class="p-5"><p class="jp-head text-lg">「未来を妄想して 可能性を信じて」</p><p class="mt-2 text-[13px] leading-[1.8] text-sub">山本さんから、玉置涼太たちへの言葉。</p></figcaption>
+      </figure>
+    </div>
+    <div class="rv mt-8"><a href="https://youtu.be/1iYN724qyZY" target="_blank" rel="noopener" class="btn btn-line px-8 py-4 text-[15px]">YouTubeで全編を見る <span class="arr">→</span></a></div>
+    <p class="mt-3 text-[12px] leading-[1.8] text-sub">YouTube：山本康二 | 稼ぐ力が上がるチャンネル（<a href="https://www.youtube.com/@koji-yamamoto-gp" target="_blank" rel="noopener" class="underline">@koji-yamamoto-gp</a>）「就活で人生を決めるな。社長が大学生に伝えた未来のつくり方」<br>動画内の「セブ島100人留学企画」がバズ留学の第1回です。開催前（2026年7月）の撮影なので、人数や内容は当時の予定です。</p>
+  </div>
+</section>
+
 <!-- ============ COMPARE：語学は副産物 ============ -->
 <section id="about" class="relative bg-white py-24 md:py-32">
   <div class="mx-auto max-w-[1400px] px-4 md:px-8">
@@ -1487,6 +1525,15 @@
       v.muted = true; io.observe(v);
       // 省電力モードなどで自動再生が止められた時は、タップで再生
       v.addEventListener('click', () => { if (v.paused) v.play().catch(() => {}); });
+    });
+  })();
+  // 掲載動画はボタンで音ありで再生。同時に鳴らさない
+  (() => {
+    const talks = [...document.querySelectorAll('#feature video')];
+    talks.forEach(v => {
+      const btn = v.parentElement.querySelector('.talk-play');
+      btn.addEventListener('click', () => { btn.remove(); v.controls = true; v.play().catch(() => {}); });
+      v.addEventListener('play', () => talks.forEach(o => { if (o !== v) o.pause(); }));
     });
   })();
   // 画像のふわっと表示
